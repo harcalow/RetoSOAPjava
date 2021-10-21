@@ -144,7 +144,7 @@
             <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 21-10-2021 11:16</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 21-10-2021 11:35</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -173,9 +173,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
                             <span class="test-case-title">
-                                <span class="error-color">
+                                <span class="success-color">
                                     Consulta no exitosa
                                         <span class="related-issue-title"></span>
                                 </span>
@@ -186,6 +186,47 @@
                 </table>
             </div>
 
+
+                <!-- CAST MEMBERS -->
+                <div>&nbsp;</div>
+                <div class="story-title">
+                    <table class="outcome-header">
+                        <tr>
+                            <td>
+                                <div>
+                                    <h3 class="discreet-story-header">
+                                        <i class="fa fa-2x fa-users"></i>
+                                        <span class="story-header-title">
+                                            <a class="btn btn-primary" data-toggle="collapse" href="#castDetails"
+                                               role="button" aria-expanded="true" aria-controls="castDetails">Cast</a>
+                                        </span>
+                                    </h3>
+
+                                    <div class="cast-member collapse" id="castDetails">
+                                        <table class="cast">
+                                            <tr>
+                                                    <td width="100%">
+                                                        <h4>
+                                                            <i class="fa fa-2x fa-user-o"></i>&nbsp;<span>Harold</span>
+                                                            <h4>
+                                                                <p></p>
+                                                                <ul>
+                                                                        <li><strong>Harold can:</strong>
+                                                                            <ul>
+                                                                                    <li>call an API at http://webservices.oorsprong.org</li>
+                                                                            </ul>
+                                                                        </li>
+                                                                </ul>
+                                                    </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- END CAST MEMBERS -->
 
 
         </div>
@@ -214,72 +255,12 @@
                     <td colspan="5"></td>
                 </tr>
 
-                    <tr class="test-ERROR">
+                    <tr class="test-SUCCESS">
 
                         <td width="50" class="step-icon">
                             <a name="0"></a>
                                 <span style="margin-left: 20px;"
-                                      class="top-level-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></a>
-                                </span>
-                        </td>
-
-                        <td class="step-description-column">
-                            <div class="step-description">
-                                    <span class="top-level-step">
-                                                When El usuario ejecuta la solicitud
-                                        </span>
-                                <span class="evidence">
-                                </span>
-                            </div>
-                        </td>
-
-                        <td width="130"><span class="top-level-step">ERROR</span></td>
-                        <td width="100"><span class="top-level-step">0.04s</span></td>
-                    </tr>
-                        <tr class="test-ERROR">
-                            <td width="40">&nbsp</td>
-                            <td width="%" colspan="3" class="error-message-cell">
-
-
-    <div style="display:block">
-        <div class="table">
-            <div class="row">
-                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">java.lang.NullPointerException</span>
-                </div>
-                <div class="col-sm-2">
-                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-1""
-                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
-                </div>
-             </div>
-        </div>
-    <div>
-
-    <!-- Details Section -->
-    <div class="row stacktrace-details">
-      <div class="col">
-        <div class="collapse multi-collapse" id="stacktraceModal-1">
-            <div class="card">
-                <div class="card-header">
-                    <h4>java.lang.NullPointerException </h4>
-                </div>
-                <div class="card-body">
-                    <div>
-                        <pre>org.oorsprong.webservices.stepdefinitions.soap.countryinfoservice.countryname.CountryNameWithCucumberStepDefinition.elUsuarioEjecutaLaSolicitud(CountryNameWithCucumberStepDefinition.java:18)<br />✽.El usuario ejecuta la solicitud(file:///C:/Users/harol/Documents/Trabajo/Cursos/Automatizacion/Servicios/RetoSOAP/RetoSOAPjava/src/test/resources/features.countryinfoservice.countryname/CountryName.feature:5)<br /></pre>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-                            </td>
-                        </tr>
-                    <tr class="test-SKIPPED">
-
-                        <td width="50" class="step-icon">
-                            <a name="1"></a>
-                                <span style="margin-left: 20px;"
-                                      class="top-level-icon"><a href='##beforetable'><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></a>
+                                      class="top-level-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
                                 </span>
                         </td>
 
@@ -293,35 +274,249 @@
                             </div>
                         </td>
 
-                        <td width="130"><span class="top-level-step">SKIPPED</span></td>
+                        <td width="130"><span class="top-level-step">SUCCESS</span></td>
                         <td width="100"><span class="top-level-step">0.01s</span></td>
                     </tr>
-                    <tr class="test-SKIPPED">
+                    <tr class="test-SUCCESS">
 
                         <td width="50" class="step-icon">
-                            <a name="2"></a>
-                                <span style="margin-left: 20px;"
-                                      class="top-level-icon"><a href='##beforetable'><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></a>
+                            <a name="1"></a>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                                   style="display:block">
+                                    <i class="fa fa-plus-square-o imgstepSection1 success-icon"
+                                       style="margin-left: 20px; float:left; padding-right:5px"></i>
+                                </a>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                                   style="display:block;">
+                                    <span class="top-level-step">
+                                                When El usuario ejecuta la solicitud
+                                        </span>
+                                </a>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="top-level-step">SUCCESS</span></td>
+                        <td width="100"><span class="top-level-step">0.48s</span></td>
+                    </tr>
+                        <tr>
+                            <td colspan="5">
+                                <table id="stepSection1" class="step-table-nested" style="display:none;">
+
+                    <tr class="test-SUCCESS">
+
+                        <td width="70" class="step-icon">
+                            <a name="1-0"></a>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1-0')"
+                                   style="display:block">
+                                    <i class="fa fa-plus-square-o imgstepSection1-0 success-icon"
+                                       style="margin-left: 40px; float:left; padding-right:5px"></i>
+                                </a>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1-0')"
+                                   style="display:block;">
+                                    <span class="nested-step">
+                                                Harold do post
+                                        </span>
+                                </a>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-step">0.48s</span></td>
+                    </tr>
+                        <tr>
+                            <td colspan="5">
+                                <table id="stepSection1-0" class="step-table-nested" style="display:none;">
+
+                    <tr class="test-SUCCESS">
+
+                        <td width="90" class="step-icon">
+                            <a name="1-0-0"></a>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1-0-0')"
+                                   style="display:block">
+                                    <i class="fa fa-plus-square-o imgstepSection1-0-0 success-icon"
+                                       style="margin-left: 60px; float:left; padding-right:5px"></i>
+                                </a>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1-0-0')"
+                                   style="display:block;">
+                                    <span class="nested-step">
+                                                Harold executes a POST on the resource /websamples.countryinfo/CountryInfoService.wso
+                                        </span>
+                                </a>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-step">0.47s</span></td>
+                    </tr>
+                        <tr>
+                            <td colspan="5">
+                                <table id="stepSection1-0-0" class="step-table-nested" style="display:none;">
+
+                    <tr class="test-SUCCESS">
+
+                        <td width="110" class="step-icon">
+                            <a name="1-0-0-0"></a>
+                                <span style="margin-left: 80px;"
+                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
                                 </span>
                         </td>
 
                         <td class="step-description-column">
                             <div class="step-description">
+                                    <span class="nested-group-step">
+                                                POST http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso
+                                        </span>
+                                <span class="evidence">
+                                        <span class="piece-of-evidence">
+                    <span>
+                        <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                                data-target="#restModal-REST-5">
+                            REST Query
+                        </button>
+                    </span>
+                    <!-- Modal -->
+                    <div class="rest-query-details">
+                        <div class="collapse multi-collapse" id="restModal-REST-5">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4>Response</h4>
+                                        <p>Status code: 200</p>
+                                        <p>Content Type: application/xml</p>
+                                        <h4>Request Headers</h4>
+                                        <pre>SOAPAction=<br>Accept=*/*<br>Content-Type=text/xml;charset=UTF-8</pre>
+                                        <h4>Content Body</h4>
+                                        <pre>&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:web=&quot;http://www.oorsprong.org/websamples.countryinfo&quot;&gt;<br>  &lt;soapenv:Header/&gt;<br>  &lt;soapenv:Body&gt;<br>    &lt;web:CountryName&gt;<br>      &lt;web:sCountryISOCode&gt;NN&lt;/web:sCountryISOCode&gt;<br>    &lt;/web:CountryName&gt;<br>  &lt;/soapenv:Body&gt;<br>&lt;/soapenv:Envelope&gt;</pre>
+                                        <h4>Request Cookies</h4>
+                                        <pre></pre>
+                                        <h4>Response Headers</h4>
+                                        <pre>Cache-Control: private, max-age=0<br>Content-Type: text/xml; charset=utf-8<br>Content-Encoding: gzip<br>Vary: Accept-Encoding<br>Server: Microsoft-IIS/8.5<br>Web-Service: DataFlex 19.1<br>Date: Thu, 21 Oct 2021 16:35:13 GMT<br>Content-Length: 322</pre>
+                                    <h4>Response Body</h4>
+                                        <pre>&lt;soap:Envelope xmlns:soap=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;<br>  &lt;soap:Body&gt;<br>    &lt;m:CountryNameResponse xmlns:m=&quot;http://www.oorsprong.org/websamples.countryinfo&quot;&gt;<br>      &lt;m:CountryNameResult&gt;Country not found in the database&lt;/m:CountryNameResult&gt;<br>    &lt;/m:CountryNameResponse&gt;<br>  &lt;/soap:Body&gt;<br>&lt;/soap:Envelope&gt;</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                        </span>
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">0s</span></td>
+                    </tr>
+
+                                </table>
+                            </td>
+                        </tr>
+
+                                </table>
+                            </td>
+                        </tr>
+
+                                </table>
+                            </td>
+                        </tr>
+                    <tr class="test-SUCCESS">
+
+                        <td width="50" class="step-icon">
+                            <a name="2"></a>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
+                                   style="display:block">
+                                    <i class="fa fa-plus-square-o imgstepSection2 success-icon"
+                                       style="margin-left: 20px; float:left; padding-right:5px"></i>
+                                </a>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
+                                   style="display:block;">
                                     <span class="top-level-step">
                                                 Then El usuario debería obtener un mensaje "Country not found in the database".
+                                        </span>
+                                </a>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="top-level-step">SUCCESS</span></td>
+                        <td width="100"><span class="top-level-step">0.01s</span></td>
+                    </tr>
+                        <tr>
+                            <td colspan="5">
+                                <table id="stepSection2" class="step-table-nested" style="display:none;">
+
+                    <tr class="test-SUCCESS">
+
+                        <td width="70" class="step-icon">
+                            <a name="2-0"></a>
+                                <span style="margin-left: 40px;"
+                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                    <span class="nested-group-step">
+                                                El c&oacute;digo de respuesta HTTP debe ser: 200
                                         </span>
                                 <span class="evidence">
                                 </span>
                             </div>
                         </td>
 
-                        <td width="130"><span class="top-level-step">SKIPPED</span></td>
-                        <td width="100"><span class="top-level-step">0s</span></td>
+                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">0s</span></td>
                     </tr>
-                <tr class="test-ERROR">
+                    <tr class="test-SUCCESS">
+
+                        <td width="70" class="step-icon">
+                            <a name="2-1"></a>
+                                <span style="margin-left: 40px;"
+                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                    <span class="nested-group-step">
+                                                Then El resultado de la petici&oacute;n debe ser:  should be a string containing '(m:CountryNameResult)Country not found in the database(/m:CountryNameResult)'
+                                        </span>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">0s</span></td>
+                    </tr>
+
+                                </table>
+                            </td>
+                        </tr>
+                <tr class="test-SUCCESS">
                         <td colspan="2"></td>
-                    <td width="130"><span class="top-level-step"><em>ERROR</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>0.07s</em></span></td>
+                    <td width="130"><span class="top-level-step"><em>SUCCESS</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>0.51s</em></span></td>
                 </tr>
 
             </table>

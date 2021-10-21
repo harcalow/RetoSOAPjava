@@ -46,6 +46,27 @@ public class CountryNameWithCucumberStepDefinition extends SetUp {
         );
     }
 
+    @Given("El usuario ha definido como código ISO {string} el cual no esta asignado.")
+    public void elUsuarioHaDefinidoComoCódigoISOElCualNoEstaAsignado(String ISOCODE) {
+        setUp();
+        bodyRequest = defineBodyRequest(ISOCODE);
+    }
+
+    @Then("El usuario debería obtener un mensaje {string}.")
+    public void elUsuarioDeberíaObtenerUnMensaje(String message) {
+        actor.should(
+                seeThatResponse(
+                        "El código de respuesta HTTP debe ser: " + SC_OK,
+                        response -> response
+                                .statusCode(SC_OK)
+                ),
+                seeThat(
+                        "El resultado de la petición debe ser: ",
+                        systemValue(fromLastResponseBy(actor)),
+                        containsString("<m:CountryNameResult>"+message+"</m:CountryNameResult>")
+                )
+        );
+    }
 
     private String defineBodyRequest(String ISOCODE){
         return readFile(ADD_XML)
